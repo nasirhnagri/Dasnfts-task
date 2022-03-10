@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,700;0,900;1,300&family=Rowdies:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+button {
+  outline: none;
+  border: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+/* h1 {
+  font-family: 'Bebas Neue';
+  letter-spacing: 4px;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+
+:root {
+  --color--black: rgb(8, 8, 8);
+  --color--black--light: rgb(39, 36, 36);
+  --color--black-white--mix: rgb(10, 9, 9);
+}
+body {
+  background-color: var(--color--black);
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.heder__logo {
+  width: 50%;
+  height: 60px;
+  display: flex;
+  padding: 0px 60px;
+}
+.heder__logo span {
+  background: linear-gradient(
+    70deg,
+    rgb(11, 239, 255),
+    rgba(10, 167, 240, 0.959),
+    rgba(224, 68, 57, 0.904)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heder__logo h1 {
+  padding: 8px 0px;
+}
+.heder__logo input {
+  height: 40px;
+  width: 250px;
+  margin: 12px 35px;
+  border-radius: 5px;
+  padding: 0px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--color--black--light);
+}
+.heder__logo i {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top: 20px;
+  right: 49%;
+}
+/* ====================input=================== */
+.heder__navbar {
+  width: 50%;
+  height: 60px;
+}
+.active {
+  color: rgba(114, 31, 190, 0.904);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-left: 10px;
+}
+nav a {
+  font-size: 17px;
+  font-family: sans-serif;
+  color: white;
+  line-height: 70px;
+  padding-left: 10px;
+}
+nav a:hover {
+  color: var(--color--black--light);
+}
+.header__btn {
+  width: 160px;
+  height: 50px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  background: linear-gradient(
+    70deg,
+    rgb(11, 239, 255),
+    rgba(16, 171, 243, 0.959),
+    rgba(233, 54, 41, 0.904)
+  );
+}
+
+@media screen and (max-width: 1130px) {
+  .header__btn {
+    width: 120px;
+    font-size: 1rem;
+  }
+  nav a {
+    font-size: 1.1rem;
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 930px) {
+  header {
+    display: inline-block;
+  }
+  .heder__logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .heder__navbar {
+    width: 100%;
+  }
+  nav {
+    float: none;
+    justify-content: space-around;
+  }
+  nav a {
+    font-size: 1.5rem;
+    padding-left: 15px;
+  }
+  .heder__logo {
+    padding: 0px 50px;
+  }
+  .heder__logo input {
+    width: 300px;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  nav a {
+    font-size: 1.3rem;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 520px) {
+  nav a {
+    font-size: 0.8rem;
+    padding-left: 5px;
+  }
+}
+/* ================================section--start===================== */
+
+.main__section {
+  width: 100%;
+  height: auto;
+}
+.main____first {
+  width: 87%;
+  height: auto;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.main__first__chaild {
+  width: 24%;
+  height: 30vh;
+  border-radius: 5px;
+}
+.first__pic {
+  background-image: url(/images/first__pic.jpg);
+}
+.second__pic {
+  background-image: url(/images/second__pic.jpg);
+}
+.third__pic {
+  background-image: url(/images/third__pic.jpg);
+}
+.fourth__pic {
+  background-image: url(/images/fourth__pic.jpg);
+}
+.main__second {
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.main__second button {
+  width: 160px;
+  height: 40px;
+  background-color: var(--color--black--light);
+  color: white;
+  border-radius: 5px;
+}
+.main__second i {
+  font-size: 20px;
+  position: relative;
+  top: 1px;
+  margin-left: 40px;
+}
+.main__second h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* ======================heading============ */
+.main__third {
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+}
+.artist {
+  width: 95%;
+  height: auto;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.about__artist {
+  width: 240px;
+  height: auto;
+  display: flex;
+  padding: 10px 10px;
+  background-color: var(--color--black-white--mix);
+  border-radius: 10px;
+}
+.artist__profile {
+  background-image: url(kartoon__2.jpeg);
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+.about__artist p {
+  color: rgb(197, 187, 187);
+}
+.about__artist h4 {
+  margin-top: 10px;
+}
+
+/* ==========================section-two================ */
+.second__section {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+.second__secton__heading {
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.second__secton__heading h3 {
+  font-size: 30px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.second__secton__parent {
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.second__secton__chaild {
+  width: 24%;
+  height: auto;
+  background-color: var(--color--black--light);
+  padding: 10px 10px 30px 10px;
+  border-radius: 10px;
+}
+
+.second__secton__chaild__inner {
+  width: 100%;
+  height: 50vh;
+  background-image: url(kartoon_3.jpeg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.second__secton__chaild__inner i {
+  border-radius: 50px;
+  padding: 8px;
+  background-color: var(--color--black--light);
+  float: right;
+  margin: 10px 10px;
+}
+.second__secton__chaild button {
+  margin: 20px 10px;
+  width: 130px;
+  height: 30px;
+  border-radius: 50px;
+  padding: 10px;
+  background: linear-gradient(
+    70deg,
+    rgb(7, 229, 245),
+    rgba(2, 149, 218, 0.959),
+    rgba(223, 31, 17, 0.904)
+  );
+}
+
+.live__prof {
+  display: flex;
+  margin: 4%;
+}
+.live__prof p {
+  margin: 10px 20px;
+  color: white;
+}
+.second__secton__chaild h3 {
+  padding-bottom: 10px;
+  margin: 0 4%;
+}
+.second__secton__chaild h5 {
+  margin: 0 4%;
+}
+.second__secton__chaild span {
+  padding-left: 50%;
+  color: white;
+}
+/* =====================third---section=============== */
+
+.third__section {
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+}
+.third__secton__parent {
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.third__secton__chaild {
+  width: 15%;
+  height: auto;
+  background-color: var(--color--black-white--mix);
+  border: 0.09px solid gray;
+  border-radius: 10px 10px 5px 5px;
+}
+.third__secton__chaild__inner {
+  width: 100%;
+  height: 20vh;
+  background-image: url(kartoon_1.jpeg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.third__secton__chaild img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  position: relative;
+  bottom: 14%;
+  left: 28%;
+}
+.third__secton__chaild h4 {
+  margin: -20px 22%;
+}
+.third__secton__chaild p {
+  margin: 30px 29%;
+}
+/* ================================================================== */
+.fourth__section {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.explore__section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.double__btn button {
+  width: 160px;
+  height: 40px;
+  background-color: var(--color--black--light);
+  color: white;
+  border-radius: 5px;
+  margin: 30px 5px;
+}
+.double__btn i {
+  padding-left: 40px;
+}
+.last__button {
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+.last__button button {
+  width: 330px;
+  height: 45px;
+  margin-top: 40px;
+  border-radius: 50px;
+  font-size: 19px;
+  border: 2px solid var(--color--black--light);
+  background: -webkit-linear-gradient(left, #049ff8, #ff0808);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* ===============================start--footer=================== */
+footer {
+  width: 100%;
+  height: auto;
+}
+.footer {
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.getnotification {
+  width: 24%;
+  height: 65vh;
+  padding-top: 80px;
+}
+.getnotification input {
+  width: 90%;
+  height: 40px;
+  background-color: var(--color--black--light);
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: white;
+}
+.getnotification ul li {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+.getnotification ul li a {
+  color: white;
+}
+.social__link {
+  width: 100%;
+  height: auto;
+}
+.social__link__div {
+  width: 87%;
+  height: auto;
+  margin: 40px auto;
+  justify-content: space-between;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.social__inner ul li {
+  padding-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+.link__icon {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--color--black--light);
+}
+.getnotification a {
+  color: #ff0808;
+  font-size: 20px;
+}
